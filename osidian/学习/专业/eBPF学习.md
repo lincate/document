@@ -189,3 +189,13 @@ libbpf 库是一个基于 C/ c++ 的通用 eBPF 库，它可以帮助解耦将 c
 
 
 [阅读清单](https://blog.csdn.net/21cnbao/article/details/95585483)
+https://segmentfault.com/a/1190000044635034
+https://tonybai.com/2022/07/19/develop-ebpf-program-in-go/
+https://cheneytianx.github.io/posts/2022/02/
+https://docs.kernel.org/bpf/libbpf/program_types.html
+https://www.slideshare.net/slideshow/bpf-tracing-and-more/71128334#19
+https://man7.org/linux/man-pages/man7/bpf-helpers.7.html
+https://time.geekbang.org/column/article/483364
+https://elixir.bootlin.com/linux/v5.10.163/source/include/uapi/linux/bpf.h
+
+略窥门径
