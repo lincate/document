@@ -186,3 +186,6 @@ eBPF Go 语言库提供了一个通用的 eBPF 库，它将获取 eBPF 字节码
 libbpf 库是一个基于 C/ c++ 的通用 eBPF 库，它可以帮助解耦将 clang/LLVM 编译器生成的 eBPF 对象文件的加载到内核中的这个过程，并通过为应用程序提供易于使用的库 API 来抽象与 BPF 系统调用的交互。
 
 [![Libbpf](https://ebpf.io/static/f4991ee40f74df260dbb3e0541855044/b14d5/libbpf.png)](https://ebpf.io/static/f4991ee40f74df260dbb3e0541855044/b990c/libbpf.png)
+
+
+[阅读清单](https://blog.csdn.net/21cnbao/article/details/95585483)
