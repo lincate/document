@@ -199,3 +199,62 @@ https://time.geekbang.org/column/article/483364
 https://elixir.bootlin.com/linux/v5.10.163/source/include/uapi/linux/bpf.h
 
 略窥门径
+
+## Map类型
+https://blog.spoock.com/2024/01/23/eBPF-Map/
+enum bpf_map_type  
+{  
+	BPF_MAP_TYPE_UNSPEC,  
+	BPF_MAP_TYPE_HASH,  
+	BPF_MAP_TYPE_ARRAY,  
+	BPF_MAP_TYPE_PROG_ARRAY,  
+	BPF_MAP_TYPE_PERF_EVENT_ARRAY,  
+	BPF_MAP_TYPE_PERCPU_HASH,  
+	BPF_MAP_TYPE_PERCPU_ARRAY,  
+	BPF_MAP_TYPE_STACK_TRACE,  
+	BPF_MAP_TYPE_CGROUP_ARRAY,  
+	BPF_MAP_TYPE_LRU_HASH,  
+	BPF_MAP_TYPE_LRU_PERCPU_HASH,  
+	BPF_MAP_TYPE_LPM_TRIE,  
+	BPF_MAP_TYPE_ARRAY_OF_MAPS,  
+	BPF_MAP_TYPE_HASH_OF_MAPS,  
+	BPF_MAP_TYPE_DEVMAP,  
+	BPF_MAP_TYPE_SOCKMAP,  
+	BPF_MAP_TYPE_CPUMAP,  
+};
+
+不同类型的参数传递；
+普通事件使用上下文
+网络事件使用__sk_buff
+
+在用户面能否使用指针直接获取变量值
+
+`__attribute__((preserve_access_index))`是一个GCC特定的属性，用于保留结构体成员的访问索引，以便在内核代码中可以通过索引访问结构体成员，而不需要显式地指定成员名称。
+`__attribute__((unused))`是GCC编译器的一个属性，用于标记一个变量、函数或类型声明为未使用。编译器在编译时会忽略这些标记为未使用的代码，以避免产生未使用代码的警告。
+
+具体来说，`__attribute__((unused))`可以用于以下几种情况：
+
+1. **变量声明**：标记为未使用的变量声明，编译器不会产生未使用变量的警告。
+2. **函数声明**：标记为未使用的函数声明，编译器不会产生未使用函数的警告。
+3. **类型声明**：标记为未使用的类型声明，编译器不会产生未使用类型的警告。
+
+
+
+BPF_MAP_TYPE_RINGBUF
+场景一：更高效、保证事件顺序地往用户空间发送数据
+替代 perf event array
+
+BTF工具集安装
+https://blog.csdn.net/qq_53928256/article/details/129737658
+
+2024/08/19 18:08:11 loading objects: field TcDropTcp: program tc_drop_tcp: load program: permission denied: R1 type=ctx expected=fp
+其中 R1 type=ctx expected=fp 说的是，验证器期望 R1 的类型是 fp 而不是 ctx 。 所谓的 fp 指的是栈上的指针类型，即期望 R1 是栈上的数据而不是 ctx 。
+
+升级WSL内核版本：
+https://learn.microsoft.com/en-us/community/content/wsl-user-msft-kernel-v6
+
+升级内核
+https://rbconnect.eu/kb/wsl2-kernel-v6-howto-for-windows-11/
+
+
+www.exception.site
