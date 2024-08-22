@@ -258,3 +258,9 @@ https://rbconnect.eu/kb/wsl2-kernel-v6-howto-for-windows-11/
 
 
 www.exception.site
+
+编译WSL KERNEL
+https://www.xxfe.com/posts/20230503-ebpf-on-wsl2/
+
+Cilium XDP详解
+https://podsbook.com/posts/cilium/xdp/
