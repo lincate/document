@@ -264,3 +264,9 @@ https://www.xxfe.com/posts/20230503-ebpf-on-wsl2/
 
 Cilium XDP详解
 https://podsbook.com/posts/cilium/xdp/
+
+eBPFMaps限制
+https://docs.cilium.io/en/stable/network/ebpf/maps/
+
+eBPF类型和使用场景
+https://arthurchiao.art/blog/bpf-advanced-notes-2-zh/
