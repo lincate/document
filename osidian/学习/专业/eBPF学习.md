@@ -270,3 +270,27 @@ https://docs.cilium.io/en/stable/network/ebpf/maps/
 
 eBPF类型和使用场景
 https://arthurchiao.art/blog/bpf-advanced-notes-2-zh/
+
+升级内核
+https://www.bilibili.com/read/cv27195436/
+
+WSL内核配置--eBPF配置相关
+https://dev.to/wiresurfer/unleash-the-forbidden-enabling-ebpfxdp-for-kernel-tinkering-on-wsl2-43fj
+自定义参数的镜像包还有问题，无法启动WSL
+
+在WSL环境进行DEBUG
+1. 挂载Debug目录
+    mount -t debugfs none /sys/kernel/debug
+3. 查看打印日志
+   cat /sys/kernel/debug/tracing/trace_pipe
+
+
+
+
+问题列表：
+1. 升级WSL内核 -- DONE
+2. 查看c中的日志打印 -- DONE
+3. WSL网卡支持XDP，内核编译参数调整 -- DONE
+4. 添加c中的事件到用户面  -- DONE
+5. 内核态向用户态进行事件发送 -- DONE
+6. 使用XDP进行数据传输  
