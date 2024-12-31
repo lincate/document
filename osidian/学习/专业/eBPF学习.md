@@ -271,6 +271,10 @@ https://docs.cilium.io/en/stable/network/ebpf/maps/
 eBPF类型和使用场景
 https://arthurchiao.art/blog/bpf-advanced-notes-2-zh/
 
+eBPF程序类型
+https://docs.kernel.org/bpf/libbpf/program_types.html
+https://ebpf-docs.dylanreimerink.nl/linux/program-type/
+
 升级内核
 https://www.bilibili.com/read/cv27195436/
 
@@ -278,6 +282,8 @@ WSL内核配置--eBPF配置相关
 https://dev.to/wiresurfer/unleash-the-forbidden-enabling-ebpfxdp-for-kernel-tinkering-on-wsl2-43fj
 自定义参数的镜像包还有问题，无法启动WSL
 
+查看可以捕获的函数：
+ /proc/kallsyms
 在WSL环境进行DEBUG
 1. 挂载Debug目录
     mount -t debugfs none /sys/kernel/debug
