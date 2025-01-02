@@ -271,6 +271,9 @@ https://docs.cilium.io/en/stable/network/ebpf/maps/
 eBPF类型和使用场景
 https://arthurchiao.art/blog/bpf-advanced-notes-2-zh/
 
+综合调试工具
+https://www.xxfe.com/posts/20230503-ebpf-on-wsl2/
+
 eBPF程序类型
 https://docs.kernel.org/bpf/libbpf/program_types.html
 https://ebpf-docs.dylanreimerink.nl/linux/program-type/
